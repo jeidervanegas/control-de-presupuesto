@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Presupuesto</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <h1 class="header__titulo">Gasto semanal</h1>
+        </header>
+        <div class="fila">
+            <div class="columna columna columna_1">
+                <div class="columna__contenido primario">
+                    <h2 class="columna__titulo uno">Añade tus gastos Aquí</h2>
+                    <form class="formulario">
+                        <div class="formulario__grupo">
+                            <label class="formulario__label" for="gasto">Gasto:</label>
+                            <input class="formulario__input" type="text" id="gasto" placeholder="Nombre del gasto">
+                        </div>
+                        <div class="formulario__gurpo">
+                            <label class="formulario__label" for="cantidad">Cantidad:</label>
+                            <input class="formulario__input" type="text" id="cantidad" placeholder="Nombre del gasto">
+                        </div>
+                        <button type="submit" class="btn">Agregar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="columna columna_2">
+                <div class="columna__contenido secundario">
+                    <h2 class="columna__titulo dos">Listado</h2>
+
+                    <div class="gastos">
+                        <ul></ul>
+                    </div>
+                    <div id="presupuesto" class="presupuesto">
+                        <div class="presupuesto__contenido azul">
+                            <p>Presupuesto: $ <span id="total"></span> </p>
+                        </div>
+                        <div class="presupuesto__contenido--restante verde">
+                            <p>Restante: $ <span id="restante"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scipts/main.js"></script>
+</body>
+</html>
